@@ -1,0 +1,24 @@
+<h3>Round: {this.state.currentRound}</h3>
+            <div className="optionOne">
+              <h5>Option 1</h5>
+              <div>Success Chance: {this.state.roundOptions.optionOne.percentageSuccessChance}</div>
+              <div>Success Points: {this.state.roundOptions.optionOne.successPoints}</div>
+              <div>Fail Points: {this.state.roundOptions.optionOne.failPoints}</div>
+              <button onClick={this.selectOption('optionOne')}>Select Option 1</button>
+            </div>
+
+            <div className="optionTwo">
+              <h5>Option 2</h5>
+              <div>Success Chance: {this.state.roundOptions.optionTwo.percentageSuccessChance}</div>
+              <div>Success Points: {this.state.roundOptions.optionTwo.successPoints}</div>
+              <div>Fail Points: {this.state.roundOptions.optionTwo.failPoints}</div>
+              <button onClick={this.selectOption('optionTwo')}>Select Option 2</button>
+            </div>
+
+            <div className="optioThree">
+              <h5>Option 3</h5>
+              <div>Success Chance: {this.state.roundOptions.optionThree.percentageSuccessChance}</div>
+              <div>Success Points: {this.state.roundOptions.optionThree.successPoints}</div>
+              <div>Fail Points: {this.state.roundOptions.optionThree.failPoints}</div>
+              <button onClick={this.selectOption('optionThree')}>Select Option 3</button>
+            </div>

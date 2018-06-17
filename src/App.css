@@ -1,0 +1,54 @@
+
+body{
+  height: 100%;
+  background: lightcyan;
+}
+.App {
+  text-align: left;
+  max-width: 1000px;
+  padding: 20px;
+  margin: auto;
+}
+
+.optionsContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.optionsContainer>div{
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background: white;
+  line-height: 20px;
+  margin-top: 20px;
+}
+.optionsContainer>div>button{
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+.optionsContainer>div.selected{
+  background-color: aliceblue;
+}
+
+@keyframes roundDurationCountdown {
+  from {width: 100%;}
+  to {width: 0%;}
+}
+
+.timeLeft{
+  height: 5px;
+  width: 100%;
+  background-color: cornflowerblue;
+  animation-name: roundDurationCountdown;
+  animation-timing-function: linear;
+}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
